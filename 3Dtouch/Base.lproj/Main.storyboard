@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TurkishKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m5e-Ou-C1H">
+                                <rect key="frame" x="0.0" y="-145" width="414" height="1041"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1041" id="F1b-75-WDQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEr-Bn-8GV" customClass="CustomButton" customModule="TurkishKit" customModuleProvider="target">
+                                <rect key="frame" x="136" y="685" width="142" height="29"/>
+                                <color key="backgroundColor" red="0.38925790786743164" green="0.20730045437812805" blue="0.69808030128479004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Ekip">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="8bK-bt-2Xy" kind="show" id="Wrx-Tm-Wfi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3d" translatesAutoresizingMaskIntoConstraints="NO" id="U7q-wU-9f2">
+                                <rect key="frame" x="20" y="251" width="374" height="394"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m5e-Ou-C1H" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-145" id="4IB-Bo-YxA"/>
+                            <constraint firstItem="U7q-wU-9f2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ABC-TV-HaU"/>
+                            <constraint firstItem="m5e-Ou-C1H" firstAttribute="centerX" secondItem="JEr-Bn-8GV" secondAttribute="centerX" id="AQH-PP-rZp"/>
+                            <constraint firstItem="U7q-wU-9f2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="207" id="GUS-sl-iMq"/>
+                            <constraint firstItem="m5e-Ou-C1H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b09-Od-Mbw"/>
+                            <constraint firstItem="U7q-wU-9f2" firstAttribute="centerX" secondItem="JEr-Bn-8GV" secondAttribute="centerX" id="es5-lU-DPV"/>
+                            <constraint firstItem="JEr-Bn-8GV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="gFQ-SO-zNZ"/>
+                            <constraint firstAttribute="trailing" secondItem="m5e-Ou-C1H" secondAttribute="trailing" id="gYe-GU-IGo"/>
+                            <constraint firstItem="JEr-Bn-8GV" firstAttribute="top" secondItem="U7q-wU-9f2" secondAttribute="bottom" constant="40" id="jMW-Fd-PBj"/>
+                            <constraint firstItem="U7q-wU-9f2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="m2y-BE-5pK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JEr-Bn-8GV" secondAttribute="bottom" constant="148" id="u7y-tX-gDG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.39130434782609" y="117.1875"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="0EM-mY-2na">
+            <objects>
+                <viewController storyboardIdentifier="3dtouch" id="8bK-bt-2Xy" customClass="ViewController1" customModule="TurkishKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g28-P7-mao">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3D dokunmaya ne dersin ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbI-Jj-ma1">
+                                <rect key="frame" x="95" y="178" width="224" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ekip" translatesAutoresizingMaskIntoConstraints="NO" id="FYO-iK-d9u">
+                                <rect key="frame" x="0.0" y="308" width="414" height="280"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FYO-iK-d9u" firstAttribute="top" secondItem="g28-P7-mao" secondAttribute="top" constant="308" id="2qO-tO-0ZM"/>
+                            <constraint firstItem="FYO-iK-d9u" firstAttribute="centerX" secondItem="fbI-Jj-ma1" secondAttribute="centerX" id="BzF-9g-x5v"/>
+                            <constraint firstItem="fbI-Jj-ma1" firstAttribute="top" secondItem="Crd-nh-7Om" secondAttribute="top" constant="134" id="Yka-UB-XWI"/>
+                            <constraint firstItem="FYO-iK-d9u" firstAttribute="leading" secondItem="g28-P7-mao" secondAttribute="leading" id="cih-RK-Cyx"/>
+                            <constraint firstAttribute="trailing" secondItem="FYO-iK-d9u" secondAttribute="trailing" id="eAU-i2-bjD"/>
+                            <constraint firstItem="FYO-iK-d9u" firstAttribute="bottom" secondItem="Crd-nh-7Om" secondAttribute="bottom" constant="-274" id="fKD-8P-3GG"/>
+                            <constraint firstItem="Crd-nh-7Om" firstAttribute="bottom" secondItem="fbI-Jj-ma1" secondAttribute="bottom" constant="659" id="gyG-AR-Vcd"/>
+                            <constraint firstItem="fbI-Jj-ma1" firstAttribute="leading" secondItem="Crd-nh-7Om" secondAttribute="leading" constant="95" id="sZ5-t9-bJD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Crd-nh-7Om"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="FYO-iK-d9u" id="AyU-6L-dUk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQg-kS-4ge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="838" y="117"/>
+        </scene>
+        <!--Pop View Controller-->
+        <scene sceneID="f61-0w-N1M">
+            <objects>
+                <viewController storyboardIdentifier="popVC" id="wjt-f7-BT7" customClass="popViewController" customModule="TurkishKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QYi-Bt-MHR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Jg-Am-Zpx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCJ-Xn-HDZ" customClass="CustomButton" customModule="TurkishKit" customModuleProvider="target">
+                                <rect key="frame" x="109" y="627" width="196" height="63"/>
+                                <color key="backgroundColor" red="0.38925790789999998" green="0.2073004544" blue="0.69808030129999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="UTB-td-xh4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Tekrar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="lQd-dy-1ZC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="XCJ-Xn-HDZ" secondAttribute="bottom" constant="206" id="6ZU-bK-Gdi"/>
+                            <constraint firstItem="0Jg-Am-Zpx" firstAttribute="leading" secondItem="QYi-Bt-MHR" secondAttribute="leading" id="BG9-as-WsR"/>
+                            <constraint firstItem="0Jg-Am-Zpx" firstAttribute="centerX" secondItem="XCJ-Xn-HDZ" secondAttribute="centerX" id="Gqn-2A-OEA"/>
+                            <constraint firstItem="XCJ-Xn-HDZ" firstAttribute="leading" secondItem="Znd-4m-NeQ" secondAttribute="leading" constant="109" id="HoY-L1-PMD"/>
+                            <constraint firstItem="0Jg-Am-Zpx" firstAttribute="top" secondItem="QYi-Bt-MHR" secondAttribute="top" id="VDr-7n-3xb"/>
+                            <constraint firstItem="XCJ-Xn-HDZ" firstAttribute="top" secondItem="Znd-4m-NeQ" secondAttribute="top" constant="583" id="ck7-3l-n8n"/>
+                            <constraint firstAttribute="trailing" secondItem="0Jg-Am-Zpx" secondAttribute="trailing" id="jZ1-j3-kks"/>
+                            <constraint firstItem="0Jg-Am-Zpx" firstAttribute="bottom" secondItem="Znd-4m-NeQ" secondAttribute="bottom" constant="34" id="rYe-EK-J89"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Znd-4m-NeQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="back" destination="XCJ-Xn-HDZ" id="BTc-dk-fpU"/>
+                        <outlet property="photo" destination="0Jg-Am-Zpx" id="tTn-uz-9iA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQ5-nt-ZvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1504.3478260869567" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3d" width="1420" height="589"/>
+        <image name="ekip" width="1005" height="625"/>
+    </resources>
+</document>
