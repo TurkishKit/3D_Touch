@@ -22,6 +22,7 @@ class ViewController1: UIViewController{
         
     }
 }
+
 extension ViewController1: UIViewControllerPreviewingDelegate {
     func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
         let convertedLocation = view.convert(location, to: imageView)
