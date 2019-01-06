@@ -22,20 +22,20 @@ class ViewController1: UIViewController{
         
     }
 }
-extension ViewController1: UIViewControllerPreviewingDelegate{
+extension ViewController1: UIViewControllerPreviewingDelegate {
     func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
         let convertedLocation = view.convert(location, to: imageView)
-        if imageView.bounds.contains(convertedLocation)
-        {      let popVC = storyboard?.instantiateViewController(withIdentifier: "popVC") as! popViewController
+        
+        if imageView.bounds.contains(convertedLocation) {
+            let popVC = storyboard?.instantiateViewController(withIdentifier: "popVC") as! popViewController
             popVC.popImage = imageView.image!
-        popVC.preferredContentSize = CGSize(width: 0.0, height: 0.0 )
-        previewingContext.sourceRect = imageView.frame
-        return popVC
+            popVC.preferredContentSize = .zero
+            previewingContext.sourceRect = imageView.frame
+            
+            return popVC
         }
-        else
-        {
-            return nil
-        }
+        
+        return nil
     }
     
     func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
@@ -44,6 +44,4 @@ extension ViewController1: UIViewControllerPreviewingDelegate{
         }
         show(viewControllerToCommit, sender: self)
     }
-    
-
 }
